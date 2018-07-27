@@ -30,6 +30,9 @@ function prompt {
 	if ($_.StartsWith(" D")) {
 	    $git_del_count += 1
 	}
+	if ($_.StartsWith("RD")) {
+	    $git_del_count += 1
+	}
 	if ($_.StartsWith("??")) {
 	    $git_new_count += 1
 	}
