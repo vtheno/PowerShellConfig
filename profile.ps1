@@ -7,7 +7,7 @@ $tempPath= ""
 $env:HOME = $env:BOX_ROOT + "\HOME"
 Set-Alias -Name "ec" -Value "runemacs"
 Set-Alias -Name "time" -Value "Measure-Command"
-Set-Alias -Name "grep" -Value "Select-String"
+Set-Alias -Name "grep" -Value "findstr"
 Set-Alias -Name "e." -Value "explorer"
 # if $(git branch)
 function prompt {
