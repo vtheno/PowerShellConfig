@@ -3,8 +3,8 @@ cat $($env:Box_ROOT + "\psconfig\path.config") | foreach {
     $tempPath += ( (iex $_) + ';' )
 }
 $env:path = $tempPath
-$env:HOME = $HOME
 $tempPath= ""
+$env:HOME = $env:BOX_ROOT + "\HOME"
 Set-Alias -Name "ec" -Value "runemacs"
 Set-Alias -Name "time" -Value "Measure-Command"
 Set-Alias -Name "e." -Value "explorer"
